@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap');
+
+:root {
+  font-size: 1.25rem;
+  --text-primary: #111111;
+  --text-secondary: #303030;
+  --link: #570861;
+  --link-hover: #240429;
+}
+
+body {
+  font-family: 'Sono', sans-serif;
+  max-width: 725px;
+  margin-inline: auto;
+  padding-block: 4rem;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+}
+
+p,
+li {
+  line-height: 1.5rem;
+}
+
+header {
+  width: max-content;
+}
+
+header .title {
+  margin-block: 0;
+  text-transform: uppercase;
+}
+
+header .subtitle {
+  margin-top: 0;
+  color: var(--text-secondary);
+  font-size: smaller;
+}
+
+.full-justify {
+  text-align: justify;
+}
+
+.full-justify:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+nav:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.module-list {
+  font-size: smaller;
+}
+
+#expandList {
+  font-size: small;
+  margin-left: 1em;
+  color: var(--link);
+}
+
+#expandList:hover,
+#expandList:focus {
+  color: var(--link-hover);
+  cursor: pointer;
+}
+
+.jumplink {
+  color: var(--text-secondary);
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+.sect-header__anchor:hover,
+.sect-header__anchor:focus {
+  color: var(--text-primary);
+}
+
+.sect-subtitle {
+}
+
+.footnote {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.footnote .equation {
+  display: block;
+  padding-left: 2rem;
+  color: var(--text-secondary);
+}
+
+.module {
+}
+
+.module .module-title {
+}
+
+.module .module-subtitle {
+}
+
+.module .module-subheading {
+}
+
+.hide {
+  display: none;
+}

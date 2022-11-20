@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noise Reap</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Noise Reap</h1>
+      <p class="subtitle full-justify">Patch in and disappear</p>
+    </header>
+    <nav>
+      <h3>On this page:</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#open-source">Open source policy</a></li>
+        <li><a href="#modules">The modules</a><span id="expandList">(show)</span></li>
+        <ul class="module-list hide">
+          <li><a href="#mono-obscura">Mono Obscura</a></li>
+          <li><a href="#paradox">Paradox</a></li>
+          <li><a href="#3xvca">3xVCA</a></li>
+          <li><a href="#anomaly">Anomaly</a></li>
+          <li><a href="#foundation">Foundation</a></li>
+          <li><a href="#bermuda">Bermuda</a></li>
+        </ul>
+        <li><a href="#manuals">Manuals</a></li>
+        <li><a href="#books">Book recommendations</a></li>
+        <li><a href="#final-words">Final words</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="about" class="sect-header">
+        <a href="https://noisereap.com/#about" class="jumplink">#</a>About
+      </h2>
+      <p>
+        Noise Reap started in 2015 by myself, Cody Iott. It originated from learning how to circuit
+        bend toy keyboards from a co-worker at pizza hut. I got hooked and started learning more and
+        more circuit theory. The first NR module was a utility VCO and
+        <a href="https://www.instagram.com/p/BBN_RvONuAl/" target="_blank"
+          >sold to someone in Hong Kong</a
+        >.
+      </p>
+      <p>
+        I quietly burnt out around 2020. I don't really care for experimental music or modular
+        synths anymore.
+        <a href="https://sweetwreath.bandcamp.com/album/flusnoix" target="_blank"
+          >Here's some music</a
+        >
+        that I was a part of, and that I am proud of. Made using homemade modular and noiseboxes,
+        arturia minibrute, and roland alpha juno 2.
+      </p>
+      <p>
+        I'm currently passionate about programming and web development. I have a fulltime job in a
+        related field. Maybe when I burn out on web dev in 2030 I'll come back and make some purely
+        digital modules.
+      </p>
+      <h2 id="open-source" class="sect-header">
+        <a href="https://noisereap.com/#open-source" class="jumplink">#</a>Open source policy
+      </h2>
+      <p><a href="#" target="_blank">Open source repository ↗</a></p>
+      <p>Noise Reap modules are open source contingent on three rules:</p>
+      <ol>
+        <li>
+          You can't pretend to be me or use the name Noise Reap. Totally fine with you using the
+          existing module names though.
+        </li>
+        <li>
+          If you plan to make money off this work you must give 6% profit* to a charity/cause of
+          your choice. Might I suggest something having to do with climate change or systemic
+          rascism.
+        </li>
+        <li>Don't ask me anything. It's up to you to figure everything out.</li>
+      </ol>
+      <p class="footnote">
+        *Defined strictly as:
+        <span class="equation">profit = customer order total - shipping - parts cost</span>
+      </p>
+      <h2 id="modules" class="sect-header">
+        <a href="https://noisereap.com/#modules" class="jumplink">#</a>The modules
+      </h2>
+      <p>
+        NR has made a lot of modules throughout the years, but I'd like to hone in on just a few of
+        the most recents ones. To see a more exhaustive list
+        <a href="https://www.modulargrid.net/e/vendors/view/352" target="_blank">here</a> is the
+        modular grid page, and
+        <a href="https://github.com/odeliy/schema-cave" target="_blank">here</a> is a schematic
+        cave.
+      </p>
+      <!------------------------>
+      <!-- Modules start here -->
+      <!------------------------>
+      <div class="module">
+        <h3 id="mono-obscura" class="module-title">
+          <a href="https://noisereap.com/#mono-obscura" class="jumplink">##</a>Mono Obscura
+        </h3>
+        <p class="module-subtitle">Modulator-less monosynth</p>
+        <h4 class="module-subheading">Description</h4>
+        <p>
+          Mono Obscura is a modulator-less monosynth. It combines additive and subtractive synthesis
+          techniques into something fresh and complex. It excels at bass/lead lines but is flexible
+          enough for organic techno sputter and other non-descript allocations.
+        </p>
+        <p>
+          Firstly, it is a studio ready triangle core VCO. It’s factory tuned to midi note C2 around
+          65Hz. The TUNE control has a +/-1.25 octave range which also the user to easily shift the
+          root note up or down and octave, but limited enough that it’s not impossible to finely
+          tune.
+        </p>
+        <p>
+          The VCO also features something called Self Modulation. A function that sends a portion of
+          the triangle output back into its own core. This warps the core to create new waveshapes
+          and asymmetric timbres. It is also destabilizing and will pull the tuning flat at higher
+          settings.
+        </p>
+        <p>
+          After the VCO comes a ridiculously long 8-stage wavefolder. This folds the triangle in on
+          itself to create new upper harmonics and sizzle.
+        </p>
+        <p>
+          After the 8-stage folder comes another wavefolder (MORE knob). This one is fundamentally
+          different in nature and combines a new wavefolding circuit with high gain to create
+          something that simultaneously overdrives and wavefolds.
+        </p>
+        <p>
+          The wavefolders sacrifice the fundamental in exchange for upper timbre complexity. Use
+          BLEND to control how much bass and power you want to bring back to the signal path. Maybe
+          not an exciting feature, but musically it unlocks a LOT of useability.
+        </p>
+        <p>
+          Next in the signal path is the understated TONE control. This is actually a 24db/oct
+          lowpass filter. There’s some default resonance that give vibrance a hint of “wob” but
+          without being cheesy. Approach this like you would a LPG. It tames and smooths the sound
+          in an organic way. You can manually control the resonance via CV input from none to self
+          oscillation.
+        </p>
+        <p>
+          Lastly in the monosynth architecture comes a VCA. This is a nice discrete transistor VCA
+          with a linear response.
+        </p>
+        <h4 class="module-subheading">Specs</h4>
+        <ul>
+          <li>16hp</li>
+          <li>55mA @ +12V</li>
+          <li>60mA @ -12V</li>
+          <li>22mm depth</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3 id="paradox" class="module-title">
+          <a href="https://noisereap.com/#paradox" class="jumplink">##</a>Paradox
+        </h3>
+        <p class="module-subtitle">Dual intermodulating VCO</p>
+        <h4 class="module-subheading">Description</h4>
+        <p>Paradox is a pair of triangle core VCOs.</p>
+        <p>
+          They can be operated independently. Or, through a diverse set of modulation capabilities,
+          work together to create a wealth of analog FM sounds.
+        </p>
+        <h4>Interesting details</h4>
+        <h5>Self modulation</h5>
+        <p>
+          Self Modulation is a technique borrowed from the Bermuda VCO. It sends a portion of the
+          top oscillator’s output back into its own core. On its own this results in pleasant timbre
+          shaping and light de-tuning. When used with other modulation parameters, self mod is an
+          endless source for sweetspots and non-traditional waveshaping.
+        </p>
+        <h5>Super sync</h5>
+        <p>
+          The top VCO can be synced to the bottom VCO or an external source. This is implemented in
+          a haphazard way with no regard for holding waveshape. Think of the the sync as a unique
+          modulation parameter. It creates new waveshapes, gates the core on and off, creates filter
+          sweep effects, and more.
+        </p>
+        <h5>Destructive spirals</h5>
+        <p>
+          The name Paradox is derived from its complex backend of intermodulation and ambiguity. One
+          VCO modulates the other, which modulates the first, which modules the other… These loops
+          can become so intense that the module can be used as a voltage controlled noisebox as well
+          as a traditional VCO.
+        </p>
+      </div>
+      <h4 class="module-subheading">Specs</h4>
+      <ul>
+        <li>8hp</li>
+        <li>35mA @ +12V</li>
+        <li>35mA @ -12V</li>
+        <li>22mm depth</li>
+      </ul>
+      <h4>Video links</h4>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/embed/pNYP3NmS8dg" target="_blank"
+            >https://www.youtube.com/embed/pNYP3NmS8dg</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/embed/JotZdR5ShQI" target="_blank"
+            >https://www.youtube.com/embed/JotZdR5ShQI</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/embed/98ReRZ541WA" target="_blank"
+            >https://www.youtube.com/embed/98ReRZ541WA</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/embed/0mCC0NArezE" target="_blank"
+            >https://www.youtube.com/embed/0mCC0NArezE</a
+          >
+        </li>
+      </ul>
+
+      <div id="3xvca" class="module">
+        <h3 class="module-title">
+          <a href="https://noisereap.com/#3xvca" class="jumplink">##</a>3xVCA
+        </h3>
+        <p class="module-subtitle">Discrete transistor trio</p>
+        <h4 class="module-subheading">Description</h4>
+        <p>3xVCA is a trio of high quality VCAs.</p>
+        <p>An intuitive one-knob design acts as both an attenuator and gain control.</p>
+        <h4 class="module-subheading">Specs</h4>
+        <ul>
+          <li>6hp</li>
+          <li>20mA @ +12V</li>
+          <li>30mA @ -12V</li>
+          <li>22mm depth</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3 id="anomaly" class="module-title">
+          <a href="https://noisereap.com/#anomaly" class="jumplink">##</a>Anomaly
+        </h3>
+        <p class="module-subtitle">Dual pole SVF w/ busted wavefolder</p>
+        <h4 class="module-subheading">Description</h4>
+        <p>Anomaly is a VCF combined with a broken wavefolder.</p>
+        <p>Create textural oblivion, occult sputterings, and rarefied musings.</p>
+        <h4 class="module-subheading">Specs</h4>
+        <ul>
+          <li>6hp</li>
+          <li>12mA @ +12V</li>
+          <li>12mA @ -12V</li>
+          <li>22mm depth</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3 id="foundation" class="module-title">
+          <a href="https://noisereap.com/#foundation" class="jumplink">##</a>Foundation
+        </h3>
+        <p class="module-subtitle">Cyborg Bassdrum</p>
+        <h4 class="module-subheading">Description</h4>
+        <p>
+          Foundation is an electro-organic instrument loosely mimicking the thump and feel of an
+          acoustic kick drum.
+        </p>
+        <h4 class="module-subheading">Specs</h4>
+        <ul>
+          <li>10hp</li>
+          <li>20mA @ +12V</li>
+          <li>10mA @ -12V</li>
+          <li>22mm depth</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3 id="bermuda" class="module-title">
+          <a href="https://noisereap.com/#bermuda" class="jumplink">##</a>Bermuda
+        </h3>
+        <p class="module-subtitle">Triangle core VCO</p>
+        <h4 class="module-subheading">Description</h4>
+        <p>The Bermuda is an analog triangle core VCO.</p>
+        <h4 class="module-subheading">Specs</h4>
+        <ul>
+          <li>8hp</li>
+          <li>20mA @ +12V</li>
+          <li>20mA @ -12V</li>
+          <li>38mm depth</li>
+        </ul>
+      </div>
+      <!---------------------->
+      <!-- Modules end here -->
+      <!---------------------->
+      <h2 id="manuals" class="sect-header">
+        <a href="https://noisereap.com/#manuals" class="jumplink">#</a>Manuals
+      </h2>
+      <p>
+        The majority of Noise Reap products never had a manual. Here are all the manuals I have:
+      </p>
+      <ul>
+        <li><a href="./manuals/3xvca_user_manual.pdf">3xVCA</a></li>
+        <li><a href="./manuals/anomaly_user_manual.pdf">Anomaly</a></li>
+        <li><a href="./manuals/foundation_user_manual.pdf">Foundation</a></li>
+        <li><a href="./manuals/isdManual.pdf">ISD Sampler</a></li>
+        <li><a href="./manuals/loafers_manual_v1.4.pdf">Loafers</a></li>
+        <li><a href="./manuals/paradox_manual_v1.1.pdf">Paradox v1</a></li>
+        <li><a href="./manuals/paradox_v2_user_manual.pdf">Paradox v2</a></li>
+        <li><a href="./manuals/Patterns.pdf">Patterns</a></li>
+        <li><a href="./manuals/swiss_manual_v1.1.pdf">Swiss Army Mixer</a></li>
+        <li><a href="./manuals/xim.pdf">Xim</a></li>
+      </ul>
+      <h2 id="books" class="sect-header">
+        <a href="https://noisereap.com/#books" class="jumplink">#</a>Book recommendations
+      </h2>
+      <p>
+        If you're interested in starting a small tech craft business in modular synths I recommend
+        the following books in no particular order:
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://www.amazon.com/Incredible-Secret-Money-Machine-II/dp/1882193652/ref=sr_1_4?qid=1668282166&refinements=p_27%3ADon+Lancaster&s=books&sr=1-4&text=Don+Lancaster"
+            target="_blank"
+            >The Incredible Secret Money Machine</a
+          >
+          by Don Lancaster
+        </li>
+        <li>
+          <a
+            href="https://www.amazon.com/CMOS-Cookbook-DON-LANCASTER/dp/0750699434/ref=sr_1_1?qid=1668282240&refinements=p_27%3ADon+Lancaster&s=books&sr=1-1&text=Don+Lancaster"
+            target="_blank"
+            >CMOS Cookbook</a
+          >
+          by Don Lancaster
+        </li>
+        <li>
+          <a
+            href="https://www.amazon.com/Electronic-Principles-Malvino/dp/1260570568/ref=sr_1_1?keywords=electronic+principles+malvino&qid=1668282371&s=books&sprefix=electronic+prin%2Cstripbooks%2C181&sr=1-1"
+            target="_blank"
+            >Electronic Principles</a
+          >
+          by Albert Malvino
+        </li>
+        <li>
+          <a
+            href="https://www.amazon.com/Transistor-circuit-approximations-Albert-Malvino/dp/007039878X/ref=sr_1_1?crid=3AEJUI8IH52B8&keywords=transistor+circuit+approximations+malvino&qid=1668282469&s=books&sprefix=transistor+circuit+approximations+malvino%2Cstripbooks%2C159&sr=1-1"
+            target="_blank"
+            >Transistor Circuit Approximations</a
+          >
+          by Albert Malvino
+        </li>
+        <li>
+          <a
+            href="https://www.amazon.com/Musical-Apps-Microprocessors-2ND-Chamberlin/dp/B000Q9QTXW/ref=sr_1_4?crid=ZG2ZR681UUCS&keywords=Musical+Applications+of+Microprocessors&qid=1668282603&s=books&sprefix=musical+applications+of+microprocessors%2Cstripbooks%2C168&sr=1-4"
+            target="_blank"
+            >Musical Applications of Microprocessors</a
+          >
+          by Hal Chamberlin
+        </li>
+        <li>
+          <a
+            href="https://www.amazon.com/AVR-Programming-Learning-Software-Technology/dp/1449355781/ref=sr_1_1?keywords=make+avr+programming&qid=1668282678&s=books&sprefix=make+avr+pro%2Cstripbooks%2C179&sr=1-1"
+            target="_blank"
+            >AVR Programming: Learning to Write Software for Hardware</a
+          >
+          by Elliot Williams
+        </li>
+        <li>
+          <a
+            href="https://www.amazon.com/Arduino-Musicians-Complete-Teensy-Microcontrollers/dp/0199309329/ref=sr_1_1?keywords=arduino+for+musicians&qid=1668282754&s=books&sprefix=Arduino+for+mus%2Cstripbooks%2C161&sr=1-1"
+            target="_blank"
+            >Arduino for Musicians: A Complete Guide to Arduino and Teensy Microcontrollers</a
+          >
+          by Brent Edstrom
+        </li>
+      </ul>
+      <h2 id="final-words" class="sect-header">
+        <a href="https://noisereap.com/#final-words" class="jumplink">#</a>Final words
+      </h2>
+      <p>
+        Thanks to everyone who has supported me throughout the years. Honestly, I've had some of the
+        coolest customers ever. In the 7 years I did this I can only remember maybe one or two
+        asshats. Y'all are the best. Keep thinking outside the box, making cool tunes, and trying to
+        make the world a more tolerable and inclusive place 🖤
+      </p>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
