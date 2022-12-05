@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap');
 
 :root {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   --text-primary: #111111;
   --text-secondary: #303030;
   --link: #570861;
@@ -13,6 +13,7 @@ body {
   max-width: 725px;
   margin-inline: auto;
   padding-block: 4rem;
+  padding-inline: 1rem;
   color: var(--text-primary);
 }
 
@@ -61,22 +62,6 @@ nav:after {
   width: 100%;
 }
 
-.module-list {
-  font-size: smaller;
-}
-
-#expandList {
-  font-size: small;
-  margin-left: 1em;
-  color: var(--link);
-}
-
-#expandList:hover,
-#expandList:focus {
-  color: var(--link-hover);
-  cursor: pointer;
-}
-
 .jumplink {
   color: var(--text-secondary);
   margin-right: 1em;
@@ -88,9 +73,6 @@ nav:after {
   color: var(--text-primary);
 }
 
-.sect-subtitle {
-}
-
 .footnote {
   font-style: italic;
   font-size: smaller;
@@ -100,20 +82,4 @@ nav:after {
   display: block;
   padding-left: 2rem;
   color: var(--text-secondary);
-}
-
-.module {
-}
-
-.module .module-title {
-}
-
-.module .module-subtitle {
-}
-
-.module .module-subheading {
-}
-
-.hide {
-  display: none;
 }
