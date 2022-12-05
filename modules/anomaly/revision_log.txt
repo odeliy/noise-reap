@@ -1,0 +1,11 @@
+v1.1
+- change R4 from 2K to 1.8K
+- move C13 up a bit so it's not so close to RV2
+
+v1.2
+- kicad v6 cleanup
+
+v1.3
+- flip to other side of pcb for easier repair
+- use 220pF C0G SMD filter caps
+- added bandlimit caps to CV input sections

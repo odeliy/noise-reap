@@ -1,0 +1,31 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.10-88a1d61d58~88~ubuntu20.04.1*
+G04 #@! TF.CreationDate,2021-04-30T11:17:43-07:00*
+G04 #@! TF.ProjectId,reaper_panel,72656170-6572-45f7-9061-6e656c2e6b69,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Copper,L2,Bot*
+G04 #@! TF.FilePolarity,Positive*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.1.10-88a1d61d58~88~ubuntu20.04.1) date 2021-04-30 11:17:43*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 #@! TA.AperFunction,ComponentPad*
+%ADD10C,7.900000*%
+G04 #@! TD*
+G04 #@! TA.AperFunction,ComponentPad*
+%ADD11C,4.800000*%
+G04 #@! TD*
+G04 APERTURE END LIST*
+D10*
+X-24000000Y7000000D03*
+X-4000000Y7000000D03*
+X-14000000Y7000000D03*
+X-4000000Y20000000D03*
+X-14000000Y20000000D03*
+X-24000000Y20000000D03*
+D11*
+X-21500000Y116250000D03*
+X-21500000Y-6250000D03*
+M02*

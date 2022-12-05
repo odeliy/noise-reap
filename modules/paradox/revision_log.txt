@@ -1,0 +1,33 @@
+v2.0 (jlcpb proto made)
+- initial draft created
+
+v2.1 (no hardware associated)
+cleaned up all issues with v2.0, but before make major pwm input updates.
+- remove RoHS logo b/c of tempcos
+- R42 changed from 10K to 100K, R44 changed from 1M to 10M*
+- add value labels to pots and trimmers for easier assembly
+- move all pots so they are centered
+
+* Proto sawtooth has an extra harsh 'kink' in the middle, changed back to original values here in case that has something to do with it. Otherwise it could just be noraml variation.
+
+v2.2
+major change: drop osc B triangle out and instead use that jack as a pwm input for osc B square
+
+v2.3
+- move components away from jack leads for easier assembly
+- Important correction. In v2.2, the sqr_mix and saw_mix input values were swapped. The square was too loud and saw too quiet.
+
+v2.4
+- All pots changed from 10KB to 100KB. As it stands 10K pots sit dangerously close to the 1/20W electrical parameter of the pot.
+
+- A few tuning resistors need to x10 to facilitate the change.
+
+- To keep sourcing simple, changing the FM AMT pot to 100K as well. Without changing its attatched resistor (R3) this should increase the span of the FM AMT. that wouldn't be a bad thing, b/c honestly it seems that that control is a little bit weak as it stands.
+
+- Changing Self Mod to 100K shouldn't have any noticable effect.
+
+- Component Position Changes Q1,Q2,C13,R17,R18,R23,R24
+
+v2.5
+- move tempco into better position on top of transistor pairs
+
