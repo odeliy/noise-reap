@@ -5,34 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noise Reap</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-size: 1.25rem;
+      }
+
+      body {
+        font-family: 'Sono', sans-serif;
+        max-width: 50rem;
+        margin-inline: auto;
+        padding-block: 4rem;
+        padding-inline: 2rem;
+        color: #111111;
+      }
+
+      a {
+        color: #570861;
+      }
+
+      a:hover,
+      a:focus {
+        color: #240429;
+      }
+
+      p,
+      li {
+        line-height: 1.5rem;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1 class="title">Noise Reap</h1>
-      <p class="subtitle full-justify">Patch in and disappear</p>
+      <h1 class="title">Noise Reap (2015 - 2022)</h1>
     </header>
-    <p><a href="#" target="_blank">Visit the NR virtual garage sale ↗</a></p>
-    <nav>
-      <h3>On this page:</h3>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#open-source">Open source policy</a></li>
-        <li><a href="#manuals">Manuals</a></li>
-        <li><a href="#books">Book recommendations</a></li>
-        <li><a href="#final-words">Final words</a></li>
-      </ul>
-    </nav>
     <main>
-      <h2 id="about" class="sect-header">
-        <a href="https://noisereap.com/#about" class="jumplink">#</a>About
-      </h2>
+      <h2>About</h2>
       <p>
-        To see a list of most of the Noise Reap modules go <a href="#">here</a>.
-        To see the schematic cave go <a href="#">here</a>.
+        To see a list of most of the Noise Reap modules go
+        <a href="https://www.modulargrid.net/e/vendors/view/352">here</a>. To
+        see the schematic cave go
+        <a href="https://github.com/odeliy/schema-cave">here</a>.
       </p>
       <p>
-        Noise Reap started in 2015 by myself, Cody Iott. It originated from
+        Noise Reap started in 2015 by myself, Cody Iott. It originated by
         learning how to circuit bend toy keyboards from a co-worker at pizza
         hut. I got hooked and started learning more and more circuit theory. The
         first NR module was a utility VCO and
@@ -41,55 +62,39 @@
         >.
       </p>
       <p>
-        I quietly burnt out around 2020. I don't really care for experimental
-        music or modular synths anymore.
+        I quietly burnt out around 2020. I'm currently passionate about
+        programming and web development. I have a fulltime job in a related
+        field. Maybe when I burn out on web dev in 2030 I'll come back and make
+        some purely digital modules.
+      </p>
+      <p>
         <a
           href="https://sweetwreath.bandcamp.com/album/flusnoix"
           target="_blank"
           >Here's some music</a
         >
-        that I was a part of, and that I am proud of. Made using homemade
-        modular and noiseboxes, arturia minibrute, and roland alpha juno 2.
-      </p>
-      <p>
-        I'm currently passionate about programming and web development. I have a
-        fulltime job in a related field. Maybe when I burn out on web dev in
-        2030 I'll come back and make some purely digital modules.
+        that I was once a part of.
       </p>
 
-      <h2 id="open-source" class="sect-header">
-        <a href="https://noisereap.com/#open-source" class="jumplink">#</a>Open
-        source policy
-      </h2>
+      <h2>Open source policy</h2>
       <p>
-        <a href="#" target="_blank">Open source repository ↗</a>
+        <a
+          href="https://github.com/odeliy/noise-reap/tree/master/modules"
+          target="_blank"
+          >Open source repository ↗</a
+        >
       </p>
-      <p>Noise Reap modules are open source contingent on three rules:</p>
+      <p>Contingent on three rules, NR modules are open source:</p>
       <ol>
+        <li>You can't pretend to be me or use the name Noise Reap.</li>
         <li>
-          You can't pretend to be me or use the name Noise Reap. Totally fine
-          with you using the existing module names though.
-        </li>
-        <li>
-          If you plan to make money off this work you must give 6% profit* to a
-          charity/cause of your choice. Might I suggest something having to do
-          with climate change or systemic rascism.
+          If you plan to make money off this work you must give some percentage
+          of the profit to a cause that benefits humanity and/or nature.
         </li>
         <li>Don't ask me anything. It's up to you to figure everything out.</li>
       </ol>
-      <p class="footnote">
-        *Defined strictly as:
-        <span class="equation"
-          >profit = customer order total - shipping - parts cost</span
-        >
-      </p>
-      <h2 id="manuals" class="sect-header">
-        <a href="https://noisereap.com/#manuals" class="jumplink">#</a>Manuals
-      </h2>
-      <p>
-        The majority of Noise Reap products never had a manual. Here are all the
-        manuals I have:
-      </p>
+      <h2>Manuals</h2>
+      <p>The majority of Noise Reap products never had a manual.</p>
       <ul>
         <li><a href="./manuals/3xvca_user_manual.pdf">3xVCA</a></li>
         <li><a href="./manuals/anomaly_user_manual.pdf">Anomaly</a></li>
@@ -102,10 +107,7 @@
         <li><a href="./manuals/swiss_manual_v1.1.pdf">Swiss Army Mixer</a></li>
         <li><a href="./manuals/xim.pdf">Xim</a></li>
       </ul>
-      <h2 id="books" class="sect-header">
-        <a href="https://noisereap.com/#books" class="jumplink">#</a>Book
-        recommendations
-      </h2>
+      <h2>Book recommendations</h2>
       <p>
         If you're interested in starting a small tech craft business in modular
         synths I recommend the following books in no particular order:
@@ -169,10 +171,7 @@
           by Brent Edstrom
         </li>
       </ul>
-      <h2 id="final-words" class="sect-header">
-        <a href="https://noisereap.com/#final-words" class="jumplink">#</a>Final
-        words
-      </h2>
+      <h2>Final words</h2>
       <p>
         Thanks to everyone who has supported me throughout the years. Honestly,
         I've had some of the coolest customers ever. In the 7 years I did this I
