@@ -1,184 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noise Reap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        font-size: 1.25rem;
-      }
 
-      body {
-        font-family: 'Sono', sans-serif;
-        max-width: 50rem;
-        margin-inline: auto;
-        padding-block: 4rem;
-        padding-inline: 2rem;
-        color: #111111;
-      }
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<title>Noise Reap</title>
+</head>
 
-      a {
-        color: #570861;
-      }
+<body>
+	<header>
+		<h1 class="title">Noise Reap</h1>
+		<nav>
+			<ul>
+				<li><a href="./index.html">home</a></li>
+				<li><a href="./shop.html">shop</a></li>
+				<li><a href="./info.html">info</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="landing">
+		<h2>We're back! New batch of Paradox Dual VCOs in stock and shipping now 📦</h2>
+		<div class="landing-img">
+			<a href="./shop.html"><img src="./images/paradox-landing.jpg"
+					alt="Paradox Dual VCO Eurorack module on a trippy artistic background">
+			</a>
+		</div>
+		<p><i>"I bought this just looking for a few extra voices for my system for paraphony and stuff like that
+				so I bought the cheapest dual osc I could find. This blew the "S" out of my "A" to put it bluntly. The dollar
+				value compared to other mods i have purchased is ridiculous also. Worth every dollar!"</i></p>
+	</main>
+	<footer>
+		<p>2015 - 2023</p>
+		<p>♡ Noise Reap 𐕣</p>
+		<p><a href="https://www.instagram.com/noisereap/">social media</a></p>
+	</footer>
+</body>
 
-      a:hover,
-      a:focus {
-        color: #240429;
-      }
-
-      p,
-      li {
-        line-height: 1.5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1 class="title">Noise Reap (2015 - 2022)</h1>
-    </header>
-    <main>
-      <h2>About</h2>
-      <p>
-        To see a list of most of the Noise Reap modules go
-        <a href="https://www.modulargrid.net/e/vendors/view/352">here</a>. To
-        see the schematic cave go
-        <a href="https://github.com/odeliy/schema-cave">here</a>.
-      </p>
-      <p>
-        Noise Reap started in 2015 by myself, Cody Iott. It originated by
-        learning how to circuit bend toy keyboards from a co-worker at pizza
-        hut. I got hooked and started learning more and more circuit theory. The
-        first NR module was a utility VCO and
-        <a href="https://www.instagram.com/p/BBN_RvONuAl/" target="_blank"
-          >sold to someone in Hong Kong</a
-        >.
-      </p>
-      <p>
-        I quietly burnt out around 2020. I'm currently passionate about
-        programming and web development. I have a fulltime job in a related
-        field. Maybe when I burn out on web dev in 2030 I'll come back and make
-        some purely digital modules.
-      </p>
-      <p>
-        <a
-          href="https://sweetwreath.bandcamp.com/album/flusnoix"
-          target="_blank"
-          >Here's some music</a
-        >
-        that I was once a part of.
-      </p>
-
-      <h2>Open source policy</h2>
-      <p>
-        <a
-          href="https://github.com/odeliy/noise-reap/tree/master/modules"
-          target="_blank"
-          >Open source repository ↗</a
-        >
-      </p>
-      <p>Contingent on three rules, NR modules are open source:</p>
-      <ol>
-        <li>You can't pretend to be me or use the name Noise Reap.</li>
-        <li>
-          If you plan to make money off this work you must give some percentage
-          of the profit to a cause that benefits humanity and/or nature.
-        </li>
-        <li>Don't ask me anything. It's up to you to figure everything out.</li>
-      </ol>
-      <h2>Manuals</h2>
-      <p>The majority of Noise Reap products never had a manual.</p>
-      <ul>
-        <li><a href="./manuals/3xvca_user_manual.pdf">3xVCA</a></li>
-        <li><a href="./manuals/anomaly_user_manual.pdf">Anomaly</a></li>
-        <li><a href="./manuals/foundation_user_manual.pdf">Foundation</a></li>
-        <li><a href="./manuals/isdManual.pdf">ISD Sampler</a></li>
-        <li><a href="./manuals/loafers_manual_v1.4.pdf">Loafers</a></li>
-        <li><a href="./manuals/paradox_manual_v1.1.pdf">Paradox v1</a></li>
-        <li><a href="./manuals/paradox_v2_user_manual.pdf">Paradox v2</a></li>
-        <li><a href="./manuals/Patterns.pdf">Patterns</a></li>
-        <li><a href="./manuals/swiss_manual_v1.1.pdf">Swiss Army Mixer</a></li>
-        <li><a href="./manuals/xim.pdf">Xim</a></li>
-      </ul>
-      <h2>Book recommendations</h2>
-      <p>
-        If you're interested in starting a small tech craft business in modular
-        synths I recommend the following books in no particular order:
-      </p>
-      <ul>
-        <li>
-          <a
-            href="https://www.amazon.com/Incredible-Secret-Money-Machine-II/dp/1882193652/ref=sr_1_4?qid=1668282166&refinements=p_27%3ADon+Lancaster&s=books&sr=1-4&text=Don+Lancaster"
-            target="_blank"
-            >The Incredible Secret Money Machine</a
-          >
-          by Don Lancaster
-        </li>
-        <li>
-          <a
-            href="https://www.amazon.com/CMOS-Cookbook-DON-LANCASTER/dp/0750699434/ref=sr_1_1?qid=1668282240&refinements=p_27%3ADon+Lancaster&s=books&sr=1-1&text=Don+Lancaster"
-            target="_blank"
-            >CMOS Cookbook</a
-          >
-          by Don Lancaster
-        </li>
-        <li>
-          <a
-            href="https://www.amazon.com/Electronic-Principles-Malvino/dp/1260570568/ref=sr_1_1?keywords=electronic+principles+malvino&qid=1668282371&s=books&sprefix=electronic+prin%2Cstripbooks%2C181&sr=1-1"
-            target="_blank"
-            >Electronic Principles</a
-          >
-          by Albert Malvino
-        </li>
-        <li>
-          <a
-            href="https://www.amazon.com/Transistor-circuit-approximations-Albert-Malvino/dp/007039878X/ref=sr_1_1?crid=3AEJUI8IH52B8&keywords=transistor+circuit+approximations+malvino&qid=1668282469&s=books&sprefix=transistor+circuit+approximations+malvino%2Cstripbooks%2C159&sr=1-1"
-            target="_blank"
-            >Transistor Circuit Approximations</a
-          >
-          by Albert Malvino
-        </li>
-        <li>
-          <a
-            href="https://www.amazon.com/Musical-Apps-Microprocessors-2ND-Chamberlin/dp/B000Q9QTXW/ref=sr_1_4?crid=ZG2ZR681UUCS&keywords=Musical+Applications+of+Microprocessors&qid=1668282603&s=books&sprefix=musical+applications+of+microprocessors%2Cstripbooks%2C168&sr=1-4"
-            target="_blank"
-            >Musical Applications of Microprocessors</a
-          >
-          by Hal Chamberlin
-        </li>
-        <li>
-          <a
-            href="https://www.amazon.com/AVR-Programming-Learning-Software-Technology/dp/1449355781/ref=sr_1_1?keywords=make+avr+programming&qid=1668282678&s=books&sprefix=make+avr+pro%2Cstripbooks%2C179&sr=1-1"
-            target="_blank"
-            >AVR Programming: Learning to Write Software for Hardware</a
-          >
-          by Elliot Williams
-        </li>
-        <li>
-          <a
-            href="https://www.amazon.com/Arduino-Musicians-Complete-Teensy-Microcontrollers/dp/0199309329/ref=sr_1_1?keywords=arduino+for+musicians&qid=1668282754&s=books&sprefix=Arduino+for+mus%2Cstripbooks%2C161&sr=1-1"
-            target="_blank"
-            >Arduino for Musicians: A Complete Guide to Arduino and Teensy
-            Microcontrollers</a
-          >
-          by Brent Edstrom
-        </li>
-      </ul>
-      <h2>Final words</h2>
-      <p>
-        Thanks to everyone who has supported me throughout the years. Honestly,
-        I've had some of the coolest customers ever. In the 7 years I did this I
-        can only remember maybe one or two asshats. Y'all are the best. Keep
-        thinking outside the box, making cool tunes, and trying to make the
-        world a more tolerable and inclusive place 🖤
-      </p>
-    </main>
-  </body>
 </html>
